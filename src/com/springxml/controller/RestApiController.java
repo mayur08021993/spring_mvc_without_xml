@@ -18,4 +18,10 @@ public class RestApiController{
    public String printOK() {
       return "OK";
    }
+   
+   @RequestMapping("/world")
+  @RequestMapping(method = RequestMethod.GET)
+   public String printHelloWorld() {
+      return "hello world";
+   }
 }
